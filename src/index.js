@@ -1,3 +1,7 @@
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+import emojipedia from './emojipedia';
+
 let numArray = [3, 56, 2, 48, 5];
 
 // Notice that in order for this to work, you dont put the Math.pow section
@@ -43,3 +47,12 @@ console.log(firstBigNum);
 const indexOfFistBigNum = numArray.findIndex(eachNum => eachNum > 30);
 console.log(indexOfFistBigNum);
 // Output: 1
+
+// ================================================
+// subString function
+// Based on functions above, truncate emojipedia meaning sections to 100 character for each.
+// ================================================
+
+const truncatedStringArray = emojipedia.map(eachObj => eachObj.meaning.substring(0, 100));
+
+console.log(truncatedStringArray);
