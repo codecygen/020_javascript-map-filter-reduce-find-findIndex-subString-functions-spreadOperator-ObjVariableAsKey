@@ -32,8 +32,14 @@ console.log(bigNumArray);
 // find function
 // ================================================
 
+const firstBigNum = numArray.find(eachNum => eachNum > 30);
+console.log(firstBigNum);
+// Output: 56
 
+// ================================================
+// findIndex function
+// ================================================
 
-
-
-//FindIndex - find the index of the first item that matches.
+const indexOfFistBigNum = numArray.findIndex(eachNum => eachNum > 30);
+console.log(indexOfFistBigNum);
+// Output: 1
