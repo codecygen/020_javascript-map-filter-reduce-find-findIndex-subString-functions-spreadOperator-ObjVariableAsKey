@@ -4,13 +4,16 @@ import emojipedia from './emojipedia';
 
 let numArray = [3, 56, 2, 48, 5];
 
-// Notice that in order for this to work, you dont put the Math.pow section
-// inside the curly braces just like in a normal function.
-// Otherwise it gives error.
+
 // ================================================
 // map function
 // ================================================
 const squareRootArray = numArray.map(eachNum => Math.pow(eachNum, 0.5));
+
+// IF you make the arrow functions multiple lines, return keywork is needed.
+// const squareRootArray = numArray.map(eachNum => {
+//     return Math.pow(eachNum, 0.5)
+// });
 
 console.log(squareRootArray);
 // Output: Array(5) [ 1.7320508075688772, 7.483314773547883, 1.4142135623730951, 6.928203230275509, 2.23606797749979 ]
