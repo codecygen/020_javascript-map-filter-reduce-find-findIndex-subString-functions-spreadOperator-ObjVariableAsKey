@@ -59,3 +59,29 @@ console.log(indexOfFistBigNum);
 const truncatedStringArray = emojipedia.map(eachObj => eachObj.meaning.substring(0, 100));
 
 console.log(truncatedStringArray);
+
+// ================================================
+// subString function
+// Based on functions above, truncate emojipedia meaning sections to 100 character for each.
+// ================================================
+
+const citrus = ['Lime', 'Lemon', 'Grapefruit'];
+const fruits = ['Apple', ...citrus, 'Banana', 'Plum'];
+
+const fullName = {
+    fName: 'James',
+    lName: 'Bond'
+};
+
+// Triple dot is necessary as otherwise system takes them as a subArray or subObject
+const user = {
+    ...fullName,
+    id: 1,
+    userName: 'jbond007'
+};
+
+console.log(fruits);
+// Output: Array(6) [ "Apple", "Lime", "Lemon", "Grapefruit", "Banana", "Plum" ]
+
+console.log(user);
+// Output: Object { fName: "James", lName: "Bond", id: 1, userName: "jbond007" }
