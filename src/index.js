@@ -85,3 +85,25 @@ console.log(fruits);
 
 console.log(user);
 // Output: Object { fName: "James", lName: "Bond", id: 1, userName: "jbond007" }
+
+// ================================================
+// Object Key as Variable
+// Assigning an Object key as a variable
+// ================================================
+
+let currentYear = new Date().getFullYear();
+let newKey = 'education';
+
+// In this example, newKey is set as 'education' but we have to put extra
+// square brackets to write that variable. If you don't put inside the square
+// brackets, javascript will think the keyword as 'newKey' instead of considering
+// it as variable name for 'education' and assigning it.
+const newPerson = {
+    fName: 'Kevin',
+    lname: 'Mitnick',
+    age: currentYear - 1963,
+    [newKey]: 'University of Southern California'
+};
+
+console.log(newPerson);
+// Output: Object { fName: "Kevin", lname: "Mitnick", age: 58, education: "University of Southern California" }
