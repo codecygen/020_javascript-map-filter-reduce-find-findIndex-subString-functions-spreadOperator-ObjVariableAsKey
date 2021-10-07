@@ -61,8 +61,8 @@ const truncatedStringArray = emojipedia.map(eachObj => eachObj.meaning.substring
 console.log(truncatedStringArray);
 
 // ================================================
-// subString function
-// Based on functions above, truncate emojipedia meaning sections to 100 character for each.
+// Spread Operator
+// Spread Operator is used to put an array or object into another array or object.
 // ================================================
 
 const citrus = ['Lime', 'Lemon', 'Grapefruit'];
